@@ -1,11 +1,10 @@
-# ToDo:
-# - pl summary/description
 %include	/usr/lib/rpm/macros.php
 %define         _class          XML
 %define         _subclass       NITF
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - Parse NITF documents
+Summary(pl):	%{_pearname} - analiza dokumentów NITF
 Name:		php-pear-%{_pearname}
 Version:	1.0.0
 Release:	1
@@ -27,6 +26,16 @@ provided. This class was originally tested against the Associated
 Press's (AP) XML data feed.
 
 This class has in PEAR status: %{_status}.
+
+%description -l pl
+Ten pakiet udostêpnia analizator dokumentów XML NITF. Analizator
+zosta³ zaprojektowany dla NITF w wersji 3.1, ale powinien byæ
+kompatybilny w przód, kiedy zostan± wydane nowe wersje NITF DTD.
+Dostêpne s± ró¿ne metody do dostêpu do g³ównych elementów dokumentu,
+takich jak hedline, byline i lede. Ta klasa by³a oryginalnie testowana
+danymi XML z Associated Press (AP).
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
