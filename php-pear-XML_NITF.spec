@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - parse NITF documents
 Summary(pl):	%{_pearname} - analiza dokumentów NITF
 Name:		php-pear-%{_pearname}
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	71e52b23b5c36572f6aaf593203eb1d1
+# Source0-md5:	f44d1215d4a3b7d1e9f3c0a53d78d4ef
 URL:		http://pear.php.net/package/XML_NITF/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
