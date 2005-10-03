@@ -1,14 +1,14 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		XML
 %define		_subclass	NITF
-%define		_status		stable
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - parse NITF documents
 Summary(pl):	%{_pearname} - analiza dokumentów NITF
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
-Release:	1.2
+Release:	1.3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
