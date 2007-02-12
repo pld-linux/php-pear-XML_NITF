@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - parse NITF documents
-Summary(pl):	%{_pearname} - analiza dokumentów NITF
+Summary(pl.UTF-8):   %{_pearname} - analiza dokumentÃ³w NITF
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
 Release:	1
@@ -33,12 +33,12 @@ Press's (AP) XML data feed.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet udostêpnia analizator dokumentów XML NITF. Analizator
-zosta³ zaprojektowany dla NITF w wersji 3.1, ale powinien byæ
-kompatybilny w przód, kiedy zostan± wydane nowe wersje NITF DTD.
-Dostêpne s± ró¿ne metody do dostêpu do g³ównych elementów dokumentu,
-takich jak hedline, byline i lede. Ta klasa by³a oryginalnie testowana
+%description -l pl.UTF-8
+Ten pakiet udostÄ™pnia analizator dokumentÃ³w XML NITF. Analizator
+zostaÅ‚ zaprojektowany dla NITF w wersji 3.1, ale powinien byÄ‡
+kompatybilny w przÃ³d, kiedy zostanÄ… wydane nowe wersje NITF DTD.
+DostÄ™pne sÄ… rÃ³Å¼ne metody do dostÄ™pu do gÅ‚Ã³wnych elementÃ³w dokumentu,
+takich jak hedline, byline i lede. Ta klasa byÅ‚a oryginalnie testowana
 danymi XML z Associated Press (AP).
 
 Ta klasa ma w PEAR status: %{_status}.
