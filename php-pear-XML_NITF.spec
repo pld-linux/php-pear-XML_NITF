@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - parse NITF documents
-Summary(pl.UTF-8):   %{_pearname} - analiza dokumentów NITF
+Summary(pl.UTF-8):	%{_pearname} - analiza dokumentów NITF
 Name:		php-pear-%{_pearname}
 Version:	1.1.0
 Release:	1
