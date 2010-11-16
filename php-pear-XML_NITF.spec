@@ -1,19 +1,17 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		XML
-%define		_subclass	NITF
 %define		_status		stable
-%define		_pearname	%{_class}_%{_subclass}
+%define		_pearname	XML_NITF
 Summary:	%{_pearname} - parse NITF documents
 Summary(pl.UTF-8):	%{_pearname} - analiza dokumentów NITF
 Name:		php-pear-%{_pearname}
-Version:	1.1.0
-Release:	3
+Version:	1.1.1
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	462fa8879bb021a0bafc6b9d44fbb50d
+# Source0-md5:	1c849b5777e5ab7081c3959eaa831ee3
 URL:		http://pear.php.net/package/XML_NITF/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.3.0
@@ -45,6 +43,11 @@ Ta klasa ma w PEAR status: %{_status}.
 %prep
 %pear_package_setup
 
+# developer project files
+%{__rm} .%{php_pear_dir}/data/XML_NITF/.buildpath
+%{__rm} .%{php_pear_dir}/data/XML_NITF/.project
+%{__rm} .%{php_pear_dir}/data/XML_NITF/.settings/org.eclipse.php.core.prefs
+
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
@@ -57,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/*.php
+%{php_pear_dir}/XML/NITF.php
