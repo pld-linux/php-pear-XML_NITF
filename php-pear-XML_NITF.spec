@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		stable
 %define		_pearname	XML_NITF
 Summary:	%{_pearname} - parse NITF documents
